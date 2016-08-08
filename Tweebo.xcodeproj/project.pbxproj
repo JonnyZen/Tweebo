@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7B86B3C1D58804200170278 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B86B3B1D58804200170278 /* main.m */; };
+		B7B86B3F1D58804200170278 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B86B3E1D58804200170278 /* AppDelegate.m */; };
+		B7B86B411D58804200170278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B86B401D58804200170278 /* Assets.xcassets */; };
+		B7B86B441D58804200170278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B86B421D58804200170278 /* LaunchScreen.storyboard */; };
+		B7B86B4F1D58804200170278 /* TweeboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B86B4E1D58804200170278 /* TweeboTests.m */; };
+		B7B86B5A1D58804200170278 /* TweeboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B86B591D58804200170278 /* TweeboUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7B86B4B1D58804200170278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7B86B2F1D58804200170278 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7B86B361D58804200170278;
+			remoteInfo = Tweebo;
+		};
+		B7B86B561D58804200170278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7B86B2F1D58804200170278 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7B86B361D58804200170278;
+			remoteInfo = Tweebo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7B86B371D58804200170278 /* Tweebo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweebo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7B86B3B1D58804200170278 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7B86B3D1D58804200170278 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B7B86B3E1D58804200170278 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B7B86B401D58804200170278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7B86B431D58804200170278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7B86B451D58804200170278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B86B4A1D58804200170278 /* TweeboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweeboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7B86B4E1D58804200170278 /* TweeboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweeboTests.m; sourceTree = "<group>"; };
+		B7B86B501D58804200170278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B86B551D58804200170278 /* TweeboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweeboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7B86B591D58804200170278 /* TweeboUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweeboUITests.m; sourceTree = "<group>"; };
+		B7B86B5B1D58804200170278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7B86B341D58804200170278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B86B471D58804200170278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B86B521D58804200170278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7B86B2E1D58804200170278 = {
+			isa = PBXGroup;
+			children = (
+				B7B86B391D58804200170278 /* Tweebo */,
+				B7B86B4D1D58804200170278 /* TweeboTests */,
+				B7B86B581D58804200170278 /* TweeboUITests */,
+				B7B86B381D58804200170278 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7B86B381D58804200170278 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7B86B371D58804200170278 /* Tweebo.app */,
+				B7B86B4A1D58804200170278 /* TweeboTests.xctest */,
+				B7B86B551D58804200170278 /* TweeboUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7B86B391D58804200170278 /* Tweebo */ = {
+			isa = PBXGroup;
+			children = (
+				B7B86B3D1D58804200170278 /* AppDelegate.h */,
+				B7B86B3E1D58804200170278 /* AppDelegate.m */,
+				B7B86B401D58804200170278 /* Assets.xcassets */,
+				B7B86B421D58804200170278 /* LaunchScreen.storyboard */,
+				B7B86B451D58804200170278 /* Info.plist */,
+				B7B86B3A1D58804200170278 /* Supporting Files */,
+			);
+			path = Tweebo;
+			sourceTree = "<group>";
+		};
+		B7B86B3A1D58804200170278 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7B86B3B1D58804200170278 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7B86B4D1D58804200170278 /* TweeboTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7B86B4E1D58804200170278 /* TweeboTests.m */,
+				B7B86B501D58804200170278 /* Info.plist */,
+			);
+			path = TweeboTests;
+			sourceTree = "<group>";
+		};
+		B7B86B581D58804200170278 /* TweeboUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7B86B591D58804200170278 /* TweeboUITests.m */,
+				B7B86B5B1D58804200170278 /* Info.plist */,
+			);
+			path = TweeboUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7B86B361D58804200170278 /* Tweebo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7B86B5E1D58804200170278 /* Build configuration list for PBXNativeTarget "Tweebo" */;
+			buildPhases = (
+				B7B86B331D58804200170278 /* Sources */,
+				B7B86B341D58804200170278 /* Frameworks */,
+				B7B86B351D58804200170278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tweebo;
+			productName = Tweebo;
+			productReference = B7B86B371D58804200170278 /* Tweebo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7B86B491D58804200170278 /* TweeboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7B86B611D58804200170278 /* Build configuration list for PBXNativeTarget "TweeboTests" */;
+			buildPhases = (
+				B7B86B461D58804200170278 /* Sources */,
+				B7B86B471D58804200170278 /* Frameworks */,
+				B7B86B481D58804200170278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7B86B4C1D58804200170278 /* PBXTargetDependency */,
+			);
+			name = TweeboTests;
+			productName = TweeboTests;
+			productReference = B7B86B4A1D58804200170278 /* TweeboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7B86B541D58804200170278 /* TweeboUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7B86B641D58804200170278 /* Build configuration list for PBXNativeTarget "TweeboUITests" */;
+			buildPhases = (
+				B7B86B511D58804200170278 /* Sources */,
+				B7B86B521D58804200170278 /* Frameworks */,
+				B7B86B531D58804200170278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7B86B571D58804200170278 /* PBXTargetDependency */,
+			);
+			name = TweeboUITests;
+			productName = TweeboUITests;
+			productReference = B7B86B551D58804200170278 /* TweeboUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7B86B2F1D58804200170278 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Zen;
+				TargetAttributes = {
+					B7B86B361D58804200170278 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LKBBW6G7D5;
+					};
+					B7B86B491D58804200170278 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LKBBW6G7D5;
+						TestTargetID = B7B86B361D58804200170278;
+					};
+					B7B86B541D58804200170278 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LKBBW6G7D5;
+						TestTargetID = B7B86B361D58804200170278;
+					};
+				};
+			};
+			buildConfigurationList = B7B86B321D58804200170278 /* Build configuration list for PBXProject "Tweebo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7B86B2E1D58804200170278;
+			productRefGroup = B7B86B381D58804200170278 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7B86B361D58804200170278 /* Tweebo */,
+				B7B86B491D58804200170278 /* TweeboTests */,
+				B7B86B541D58804200170278 /* TweeboUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7B86B351D58804200170278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B86B411D58804200170278 /* Assets.xcassets in Resources */,
+				B7B86B441D58804200170278 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B86B481D58804200170278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B86B531D58804200170278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7B86B331D58804200170278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B86B3F1D58804200170278 /* AppDelegate.m in Sources */,
+				B7B86B3C1D58804200170278 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B86B461D58804200170278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B86B4F1D58804200170278 /* TweeboTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B86B511D58804200170278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B86B5A1D58804200170278 /* TweeboUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7B86B4C1D58804200170278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7B86B361D58804200170278 /* Tweebo */;
+			targetProxy = B7B86B4B1D58804200170278 /* PBXContainerItemProxy */;
+		};
+		B7B86B571D58804200170278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7B86B361D58804200170278 /* Tweebo */;
+			targetProxy = B7B86B561D58804200170278 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7B86B421D58804200170278 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7B86B431D58804200170278 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7B86B5C1D58804200170278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B7B86B5D1D58804200170278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7B86B5F1D58804200170278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tweebo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jonny.Tweebo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B7B86B601D58804200170278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tweebo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jonny.Tweebo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B7B86B621D58804200170278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TweeboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jonny.TweeboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tweebo.app/Tweebo";
+			};
+			name = Debug;
+		};
+		B7B86B631D58804200170278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TweeboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jonny.TweeboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tweebo.app/Tweebo";
+			};
+			name = Release;
+		};
+		B7B86B651D58804200170278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TweeboUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jonny.TweeboUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tweebo;
+			};
+			name = Debug;
+		};
+		B7B86B661D58804200170278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TweeboUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jonny.TweeboUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tweebo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7B86B321D58804200170278 /* Build configuration list for PBXProject "Tweebo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B86B5C1D58804200170278 /* Debug */,
+				B7B86B5D1D58804200170278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7B86B5E1D58804200170278 /* Build configuration list for PBXNativeTarget "Tweebo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B86B5F1D58804200170278 /* Debug */,
+				B7B86B601D58804200170278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B7B86B611D58804200170278 /* Build configuration list for PBXNativeTarget "TweeboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B86B621D58804200170278 /* Debug */,
+				B7B86B631D58804200170278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B7B86B641D58804200170278 /* Build configuration list for PBXNativeTarget "TweeboUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B86B651D58804200170278 /* Debug */,
+				B7B86B661D58804200170278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7B86B2F1D58804200170278 /* Project object */;
+}

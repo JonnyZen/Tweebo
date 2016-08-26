@@ -10,4 +10,10 @@
 
 @interface User : NSObject
 
+@property (copy, nonatomic) NSString *name;
+@property (copy, nonatomic) NSString *idstr;
+@property (copy, nonatomic) NSString *profileImageURL;
+
++ (instancetype)userWithDictionary:(NSDictionary *)dict;
+
 @end

@@ -8,11 +8,11 @@
 
 #import "ZQTabBarController.h"
 #import "ZQNavigationController.h"
-
 #import "TimeLineViewController.h"
 #import "FavoriteViewController.h"
 #import "MessageViewController.h"
 #import "UserViewController.h"
+#import "Constant.h"
 
 @interface ZQTabBarController ()
 
@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tabBar.tintColor = [UIColor colorWithRed:29/255.0 green:160/255.0 blue:241/255.0 alpha:1.0];
+    self.tabBar.tintColor = Maincolor;
     
     [self initTabBarItem];
     
@@ -47,17 +47,14 @@
 - (void)addChildViewController:(UIViewController *)childController WithTitle:(NSString *)title andImage:(UIImage *)image {
     childController.title = title;
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    textAttrs[NSForegroundColorAttributeName] = [UIColor colorWithRed:29/255.0 green:160/255.0 blue:241/255.0 alpha:1.0];
+    textAttrs[NSForegroundColorAttributeName] = Maincolor;
     [childController.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateSelected];
+    
     childController.tabBarItem.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     ZQNavigationController *navigationController = [[ZQNavigationController alloc] initWithRootViewController:childController];
     [self addChildViewController:navigationController];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end

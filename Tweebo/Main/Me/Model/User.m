@@ -10,4 +10,12 @@
 
 @implementation User
 
++ (instancetype)userWithDictionary:(NSDictionary *)dict {
+    User *user = [[User alloc] init];
+    user.name = dict[@"name"];
+    user.idstr = dict[@"idstr"];
+    user.profileImageURL = dict[@"profile_image_url"];
+    return user;
+}
+
 @end

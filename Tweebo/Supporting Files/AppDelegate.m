@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZQTabBarController.h"
+#import "WeiboAccessViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +20,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[ZQTabBarController alloc] init];
+    self.window.rootViewController = [[WeiboAccessViewController alloc] init];
     [self.window makeKeyAndVisible];
+
+    NSLog(@"%@", NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject);
     return YES;
 }
 

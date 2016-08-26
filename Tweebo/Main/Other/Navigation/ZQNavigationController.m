@@ -7,6 +7,8 @@
 //
 
 #import "ZQNavigationController.h"
+#import "Constant.h"
+#import "UIView+Extension.h"
 
 @interface ZQNavigationController ()
 
@@ -14,24 +16,37 @@
 
 @implementation ZQNavigationController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
++ (void)initialize {
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
     
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = Maincolor;
+    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+    [item setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
+    
+    NSMutableDictionary *disableTextAttrs = [NSMutableDictionary dictionary];
+    disableTextAttrs[NSForegroundColorAttributeName] = [UIColor grayColor];
+    disableTextAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:14];
+    [item setTitleTextAttributes:disableTextAttrs forState:UIControlStateDisabled];
+    
+    UINavigationBar *bar = [UINavigationBar appearance];
+    bar.barTintColor = Maincolor;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    [super pushViewController:viewController animated:animated];
+    
+    if (self.viewControllers.count > 1) {
+        UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [backButton setImage:[UIImage imageNamed:@"back~iphone"] forState:UIControlStateNormal];
+        backButton.size = backButton.currentImage.size;
+        [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)back {
+    [self popViewControllerAnimated:YES];
 }
-*/
 
 @end

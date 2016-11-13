@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ZQTabBarController.h"
 #import "WeiboAccessViewController.h"
+#import "Account.h"
 
 @interface AppDelegate ()
 
@@ -20,10 +21,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[WeiboAccessViewController alloc] init];
-    [self.window makeKeyAndVisible];
 
     NSLog(@"%@", NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject);
+    
+    NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
+    NSString *accountInfoFilePath = [documentPath stringByAppendingPathComponent:@"accessInfo.archive"];
+    Account *account = [NSKeyedUnarchiver unarchiveObjectWithFile:accountInfoFilePath];
+    if (account) {
+        self.window.rootViewController = [[ZQTabBarController alloc] init];
+    }
+    else {
+        self.window.rootViewController = [[WeiboAccessViewController alloc] init];
+    }
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -9,7 +9,8 @@
 #import "WeiboAccessViewController.h"
 #import "AFNetworking.h"
 #import "Account.h"
-#import "TimeLineViewController.h"
+//#import "TimeLineViewController.h"
+#import "ZQTabBarController.h"
 
 @interface WeiboAccessViewController () <UIWebViewDelegate>
 
@@ -66,7 +67,7 @@
         [Account accountAccessInfoSavingWithDictionary:responseObject];
         
         UIWindow *window = [UIApplication sharedApplication].keyWindow;
-        window.rootViewController = [[TimeLineViewController alloc] init];
+        window.rootViewController = [[ZQTabBarController alloc] init];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败！错误信息：%@", error);

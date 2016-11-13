@@ -118,7 +118,7 @@
     
     Tweet *lastTweet = self.tweets.lastObject;
     if (lastTweet) {
-        NSUInteger maxID = [lastTweet.idstr longLongValue] - 1; //新浪的微博ID很长，需要long long类型
+        NSUInteger maxID = [lastTweet.idstr longLongValue] - 1; //微博的ID很长，需要long long类型
         parameters[@"max_id"] = [NSString stringWithFormat:@"%ld", maxID];
     }
     
